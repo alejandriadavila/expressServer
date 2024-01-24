@@ -1,7 +1,13 @@
 const express = require("express")
 const router = express.Router()
 
-const summer = require("../data/spring")
+const spring = require("../data/spring")
 
 router
-    .route("/:")
+    .route("/")
+    .get((req, res) => {
+        res.json(spring)
+    })
+
+
+module.exports = router
