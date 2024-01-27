@@ -12,43 +12,19 @@
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+An Express API for accessing information about in season crops for the farming sim Coral Island. Crop information retrieved from the Coral Island wiki.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Crop information is divided by the season and you can access the following:
+- Crop type
+- Seed name & cost
+- Growing time & regrowth time (if applicable)
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+Future Improvements Planned:
+- Crop Planner that will allow you to make a shopping list of seeds by searching through crops by season
+- Crop Tracker that will keep track of plots and growth phase 
 
 
 <!-- GETTING STARTED -->
@@ -56,42 +32,11 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Dependencies
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+"ejs": "^3.1.9",
+"express": "^4.18.2",
+"nodemon": "^3.0.3"
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -112,8 +57,8 @@ Don't forget to give the project a star! Thanks again!
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Coral Island (Game)](https://www.stairwaygames.com/coral-island)
+* [Coral Island Wiki](https://coralisland.fandom.com/wiki/Farming)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Coral Island Crop API</title>
 </head>
 <body>
     <div class="seasonTitle">
-        <h1>Season: Winter</h1>
+        <h1>Season: <%= season %></h1>
     </div>
     <div class="cropContainer">
-        <div class="card">
-            <div class="card-header">
-                <img src="" alt="Crop sprite">
-              Crop name
-            </div>
-            <ul>
-              <li>ID</li>
-              <li>name</li>
-              <li>seedName</li>
-            </ul>
-          </div>
+        <% if (winter.length > 0){ %>
+            <% winter.forEach(crop => { %>
+                <div class="card">
+                    <div class="card-header">
+                        <img src=" <%= crop.imgUrl %> " alt="Crop sprite">
+                        <p><%= crop.name %></p>
+                    </div>
+                    <ul>
+                      <li>ID: <%= crop.id %></li>
+                      <li>Type: <%= crop.type %></li>
+                      <li>Seeds: <%= crop.seedName %></li>
+                      <li>Cost: <%= crop.seedCost %></li>
+                      <li>Time to grow: <%= crop.growthTime %></li>
+                      <li>Time to regrow: <%= crop.regrowTime %></li>
+                    </ul>
+                  </div>
+            <% }) %>
+        <% } %>
     </div>
 
 </body>

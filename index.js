@@ -2,7 +2,10 @@ const express = require("express")
 const app = express()
 const port = 3000
 
+app.use(express.static("./styles"))
+
 const fs = require("fs")
+
 app.set("view engine", "ejs")
 
 const spring = require("./routes/spring")
@@ -12,8 +15,6 @@ const winter = require("./routes/winter")
 const cropPlanner = require("./routes/cropPlanner")
 const error = require("./error")
 
-
-// app.engine()
 
 app.use("/spring", spring)
 app.use("/summer", summer)

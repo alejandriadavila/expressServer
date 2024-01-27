@@ -6,8 +6,8 @@ const winter = require("../data/winter")
 router
     .route("/")
     .get((req, res) => {
-        res.render('winter')
-        res.json(winter)
+        res.render('winter', {season: "Winter", winter})
+        // res.json(winter)
     })
 
 router
