@@ -9,5 +9,13 @@ router
         res.json(spring)
     })
 
+router
+    .route("/:regrowBoolean")
+    .get((req, res) => {
+        const boolean = spring.filter(function(crop){
+            return crop.regrowBoolean === req.params.regrowBoolean
+    })
+        res.json(boolean)
+    })
 
 module.exports = router

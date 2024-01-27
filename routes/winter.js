@@ -9,4 +9,13 @@ router
         res.json(winter)
     })
 
+router
+    .route("/:regrowBoolean")
+    .get((req, res) => {
+        const boolean = winter.filter(function(crop){
+            return crop.regrowBoolean === req.params.regrowBoolean
+    })
+        res.json(boolean)
+    })
+    
 module.exports = router
