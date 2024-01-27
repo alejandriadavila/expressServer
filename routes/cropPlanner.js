@@ -7,7 +7,8 @@ const error = require("../error")
 router
     .route("/")
     .get((req, res) => {
-        res.json(cropPlanner)
+        // res.json(cropPlanner)
+        res.render('cropPlanner')
     })
     .post((req, res, next) => {
         if (req.body.id && req.body.name && req.body.type && req.body.seedName && req.body.seedCost && req.body.growthTime && req.body.regrowBoolean && req.body.regrowTime && req.body.imgUrl){
